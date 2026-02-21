@@ -1,9 +1,7 @@
-[app]
-
 # Nom de l'application
 title = Presidence
 
-# Nom du package
+# Package (important : tout en minuscule)
 package.name = presidence
 package.domain = org.scoremille
 
@@ -17,25 +15,24 @@ version = 0.2
 # Dépendances
 requirements = python3,kivy
 
-# Orientation
+# Orientation écran
 orientation = portrait
 
 # Plein écran
 fullscreen = 1
 
-# Android
+# --- Configuration Android STABLE (corrige ton erreur GitHub) ---
 android.api = 31
 android.minapi = 21
+android.sdk = 24
 android.ndk = 25b
+android.accept_sdk_license = True
 android.archs = arm64-v8a, armeabi-v7a
 
-# Autorisations (nécessaires pour sauvegarde locale)
-android.permissions = WRITE_EXTERNAL_STORAGE,READ_EXTERNAL_STORAGE
+# Permissions pour sauvegarde
+android.permissions = READ_EXTERNAL_STORAGE,WRITE_EXTERNAL_STORAGE
 
-# Optimisation
-android.allow_backup = True
-
-# Optionnel (si tu ajoutes plus tard)
+# Optionnel (tu peux ajouter plus tard)
 # icon.filename = icon.png
 # presplash.filename = presplash.png
 
